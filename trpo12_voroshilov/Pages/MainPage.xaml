@@ -10,7 +10,7 @@
 
     <Grid>
         <DockPanel LastChildFill="False">
-            <ListView ItemsSource="{Binding service.Users}" DockPanel.Dock="Top" SelectedItem="{Binding user}">
+            <ListView ItemsSource="{Binding service.Users}" DockPanel.Dock="Top" SelectedItem="{Binding user}" Height="300">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>

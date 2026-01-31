@@ -154,3 +154,4 @@ C:\Users\st310-08\Desktop\voroshilov\trpo12_voroshilov\trpo12_voroshilov\bin\Deb
 C:\Users\st310-08\Desktop\voroshilov\trpo12_voroshilov\trpo12_voroshilov\obj\Debug\net8.0-windows\trpo12_voroshilov_Content.g.cs
 C:\Users\st310-08\Desktop\voroshilov\trpo12_voroshilov\trpo12_voroshilov\obj\Debug\net8.0-windows\App.baml
 C:\Users\st310-08\Desktop\voroshilov\trpo12_voroshilov\trpo12_voroshilov\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\st310-08\Desktop\voroshilov\trpo12_voroshilov\trpo12_voroshilov\obj\Debug\net8.0-windows\trpo12_voroshilov.sourcelink.json

@@ -37,15 +37,19 @@ namespace trpo12_voroshilov.Pages
         }
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            if (isEdit)
-                _usersService.Commit();
-            else
+            if (!string.IsNullOrEmpty(_user.Username) && !string.IsNullOrEmpty(_user.Email) && !string.IsNullOrEmpty(_user.Login) && !string.IsNullOrEmpty(_user.Password))
             {
-                _user.CreatedAt = DateTime.Now;
-                _usersService.Add(_user);
+                if (isEdit)
+                    _usersService.Commit();
+                else
+                {
+                    _user.CreatedAt = DateTime.Now;
+                    _usersService.Add(_user);
+                }
+                MessageBox.Show("Добавлен");
+                NavigationService.GoBack();
             }
-            MessageBox.Show("Добавлен");
-            NavigationService.GoBack();
+            else MessageBox.Show("Заполните все поля!");
         }
     }
 }

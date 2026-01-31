@@ -13,8 +13,13 @@
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
             <StackPanel>
                 <Label Content="Логин" HorizontalAlignment="Center"/>
-                <TextBox Text="{Binding Login}"
-                         m:HintAssist.Hint="Введите логин"/>
+                <TextBox m:HintAssist.Hint="Введите логин">
+                    <Binding Path="Login">
+                        <Binding.ValidationRules>
+                            <validators:ValidationLogin/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox>
             </StackPanel>
             <StackPanel>
                 <Label Content="Имя пользователя" HorizontalAlignment="Center"/>
@@ -23,8 +28,13 @@
             </StackPanel>
             <StackPanel>
                 <Label Content="Электронная почта" HorizontalAlignment="Center"/>
-                <TextBox Text="{Binding Email}"
-                         m:HintAssist.Hint="Введите электронную почту"/>
+                <TextBox m:HintAssist.Hint="Введите электронную почту">
+                    <Binding Path="Email">
+                        <Binding.ValidationRules>
+                            <validators:ValidationEmail/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox>
             </StackPanel>
             <StackPanel>
                 <Label Content="Пароль" HorizontalAlignment="Center"/>

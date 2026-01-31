@@ -41,5 +41,6 @@ namespace trpo12_voroshilov.Service
                 Users.Add(user);
             }
         }
+
     }
 }
